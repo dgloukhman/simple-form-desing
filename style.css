@@ -4,6 +4,7 @@
   --green-color: rgb(43, 61, 33);
   --main-background-color: #f3f2f2;
   --font-color-with-background: white;
+  --orange-color: sandybrown;
   font-size: 1.5rem;
   font-family: "Roboto";
 }
@@ -55,10 +56,10 @@ button {
   border: none;
   border-radius: 0.5rem;
   margin-top: 1rem;
-  border: 3px var(--green-color) solid;
 }
 button:hover {
-  border: 3px sandybrown solid;
+  outline: 3px var(--orange-color) solid;
+  /* color: var(--orange-color); */
 }
 .row {
   display: flex;
@@ -79,6 +80,10 @@ input {
   border: 1px solid rgb(212, 212, 212);
   display: flex;
 }
+
+input:focus-visible {
+  outline-color: var(--orange-color);
+}
 main > * {
   margin: 30px auto;
 }
@@ -87,7 +92,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: sandybrown;
+  color: var(--orange-color);
 }
 #upper-text {
   margin: 7rem 10rem 3rem 0;
